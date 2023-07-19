@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Zapatos - Inicio de sesión</title>
+  <link rel="stylesheet" href="login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <a href="login.html" class="logo"><img src="./recursos/logo (1).png" alt="logo"></a>
+    <nav class="navbar">
+      <p>Bienvenidos a nuestra Tienda de Calzado</p>
+    </nav>
+
+  </header>
+  <div class="container">
+    <h1>Inicia sesión</h1>
+    <form id="login-form">
+      <p> Por favor, inicia sesión para continuar</p>
+      <div class="input-box">
+         <input type="text" id="username" onkeyup="cambiarColor(event)" placeholder="Usuario" required>
+         <i class='bx bxs-user'></i>
+      </div>
+
+      <div class="input-box">
+         <input type="password" id="password" onkeyup="cambiarColor(event)" placeholder="Contraseña" required>
+         <i class='bx bxs-lock-alt' ></i>
+      </div>
+
+      <button class="btn" type="submit">Iniciar sesión</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

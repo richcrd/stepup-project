@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Tienda de Zapatos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .navbar h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .navbar li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .navbar li a.active {
+      font-weight: bold;
+    }
+    
+    .contact-form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    
+    .contact-form h2 {
+      margin-top: 0;
+    }
+    
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .contact-form input,
+    .contact-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Tienda de Zapatos</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Hombres</a></li>
+          <li><a href="#">Mujeres</a></li>
+          <li><a href="#">Niños</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact-form">
+    <h2>Información del Cliente</h2>
+    <form action="procesar.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+      
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+      
+      <label for="forma-pago">Forma de Pago:</label>
+      <select id="forma-pago" name="forma-pago" required>
+        <option value="">Selecciona una opción</option>
+        <option value="tarjeta">Tarjeta de Crédito</option>
+        <option value="paypal">PayPal</option>
+        <option value="efectivo">Efectivo</option>
+      </select>
+      
+      <label for="tarjeta-credito">Tarjeta de Crédito:</label>
+      <input type="text" id="tarjeta-credito" name="tarjeta-credito">
+      
+      <label for="envio">Método de Envío:</label>
+      <input type="text" id="envio" name="envio" required>
+      
+      <input type="submit" value="Realizar Compra">
+    </form>
+  </section>
+
+  <footer>
+    <p>Tienda de Zapatos &copy; 2023. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+

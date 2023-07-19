@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Zapatos</title>
+  <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+    <header class="contenido-pagina-nav">
+        <!--Encabezado de la Página-->
+        <div class="navbar">
+          <img id="stepup-logo" src="/recursos/Stepup_logo1.png" alt="" height="65px">
+          <nav>
+            <!--Navegación de la página-->
+            <ul>
+              <li><a href="main.html">Inicio</a></li>
+              <li><a href="catalogo.html">Catálogo</a></li>
+              <li><a href="#">Hombres</a></li>
+              <li><a href="#">Mujeres</a></li>
+              <li><a href="#">Niños</a></li>
+              <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero">
+          <h2>Encuentra tus zapatos perfectos</h2>
+          <a href="#" class="btn">Explorar</a>
+        </div>
+      </header>
+  
+  <main>
+    <!-- Contenido principal - Catálogo de zapatos -->
+    <div id="filters">
+      <label for="category">Categoría:</label>
+      <select id="category">
+        <option value="todos">Todos</option>
+        <option value="deportivos">Deportivos</option>
+        <option value="casuales">Casuales</option>
+        <option value="formales">Formales</option>
+      </select>
+    </div>
+
+    <div id="catalog">
+      <!-- Aquí van los productos -->
+      <div class="product deportivos">
+        <img src="/recursos/zapato1.png" alt="Zapato deportivo 1" height="100px">
+        <h3>Zapato Deportivo 1</h3>
+        <p>Talla: 42</p>
+        <p>Color: Negro</p>
+        <p>Precio: $99.99</p>
+      </div>
+      <div class="product casuales">
+        <img src="/recursos/zapato2.png" alt="Zapato casual 1" height="100px">
+        <h3>Zapato Casual 1</h3>
+        <p>Talla: 38</p>
+        <p>Color: Azul</p>
+        <p>Precio: $79.99</p>
+      </div>
+      <!-- Agrega más productos aquí -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+<a href="main.html" class="boton-volver">Volver a inicio</a>
+</html>

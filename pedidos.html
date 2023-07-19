@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Pedidos</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Encabezado de la página -->
+    <h1>Sistema de Pedidos</h1>
+  </header>
+  
+  <main>
+    <!-- Contenido principal - Formulario de pedidos -->
+    <form id="order-form" onsubmit="submitOrder(event)">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required>
+      
+      <label for="products">Productos:</label>
+      <textarea id="products" required></textarea>
+      
+      <button type="submit">Realizar Pedido</button>
+    </form>
+  </main>
+</body>
+</html>

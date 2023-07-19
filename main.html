@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StepUp</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- Link para estilos externos e iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Encabezado de la Página-->
+  <header class="header">
+      <a href="main.html"><img id="stepup-logo" src="./recursos/logo (1).png" alt="logo"></a>
+        <!-- Icono del menu -->
+        <!--Navegación de la página-->
+        <ul class="navbar">
+          <!-- links -->
+          <li><a class="active" href="#home">Inicio</a></li>
+          <li><a href="#products">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#cart.html" id="lg-cart"><i class='bx bx-cart' ></i></a></li>
+          <a href="#" id="close"><i class='bx bx-x'></i></a>
+        </ul>
+        <!-- Icono de menu de la navegacion de pagina -->
+        <div id="mobile">
+          <a href="#cart.html"><i class='bx bx-cart' ></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+  </header>
+  <!-- Hero de la pagina -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h2>Encuentra tus zapatos perfectos</h2>
+      <p>Descubre nuestra exclusiva selección de zapatos en el catálogo de StepUp. ¡Explora nuestros artículos y encuentra el par perfecto para ti!</p>
+      <a href="#" class="btn">Explorar</a>
+    </div>
+  </section>
+  <!-- Sobre Nosotros -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="./recursos/about.jpg" alt="about-img">
+    </div>
+    <div class="about-text">
+      <h2>Sobre Nosotros</h2>
+      <p>En StepUp, entendemos que los zapatos no son solo accesorios, sino una forma de expresión personal. Por eso, nos esforzamos en ofrecerte una amplia selección de zapatos de alta calidad, desde elegantes tacones hasta zapatillas deportivas modernas, pasando por cómodos zapatos casuales. Nos enorgullece ofrecer una experiencia de compra excepcional a nuestros clientes. Nuestro equipo está comprometido en brindarte un servicio amable y atento, asesorándote en la búsqueda del calzado perfecto que se adapte a tus necesidades y gustos individuales. Queremos que te sientas confiado(a) y satisfecho(a) con cada compra que realices en nuestra tienda.</p>
+      <a href="#" class="btn">Leer mas</a><hr>
+    </div>
+  </section>
+
+  <!--Contenido de productos-->
+  <section class="products" id="products">
+    <div class="heading">
+       <h2>Productos Destacados</h2>
+    </div>
+    <!-- Contenedor -->
+    <div class="products-container">
+      <div class="box">
+        <img src="./recursos/z (4).png" alt="Zapato 1" height="150px">
+        <h3>Zapato 1</h3>
+          <div class="content">
+             <span>$99.9</span>
+             <a href="#">Comprar</a>
+          </div>
+      </div>
+      <div class="box">
+        <img src="./recursos/z (5).png" alt="Zapato 1" height="150px">
+        <h3>Zapato 2</h3>
+          <div class="content">
+             <span>$99.9</span>
+             <a href="#">Comprar</a>
+          </div>
+      </div>
+      <div class="box">
+        <img src="./recursos/z (8).png" alt="Zapato 1" height="150px">
+        <h3>Zapato 3</h3>
+          <div class="content">
+             <span>$99.9</span>
+             <a href="#">Comprar</a>
+          </div>
+      </div>
+      <div class="box">
+        <img src="./recursos/z (6).png" alt="Zapato 1" height="150px">
+        <h3>Zapato 4</h3>
+          <div class="content">
+             <span>$99.9</span>
+             <a href="#">Comprar</a>
+          </div>
+      </div>
+      <div class="box">
+        <img src="./recursos/z (7).png" alt="Zapato 1" height="150px">
+        <h3>Zapato 5</h3>
+          <div class="content">
+             <span>$99.9</span>
+             <a href="#">Comprar</a>
+          </div>
+      </div>
+      <div class="box">
+        <img src="./recursos/z (4).png" alt="Zapato 1" height="150px">
+        <h3>Zapato 5</h3>
+          <div class="content">
+             <span>$99.9</span>
+             <a href="#">Comprar</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- boleta informativa -->
+  <section class="newsletter" id="newsletter">
+    <div class="newstext">
+      <h4>Registrate a nuestro Boletin informativo</h4>
+      <p>Obten actualizaciones en correo sobre nuestras ultimas <span>ofertas especiales</span> de la tienda</p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Tu correo electronico">
+      <button>Registrate</button>
+
+    </div>
+
+  </section>
+<!--Pie de Página-->
+  <footer>
+     <div class="footer-container" id="contacto">
+          <div class="social-icons">
+              <a href=""><i class='bx bxl-facebook-circle'></i></a>
+              <a href=""><i class='bx bxl-instagram'></i></a>
+              <a href=""><i class='bx bxl-whatsapp'></i></a>
+         </div>
+         <div class="footer-nav">
+             <ul>
+               <li><a href="#">Inicio</a></li>
+               <li><a href="#">Catálogo</a></li>
+               <li><a href="#">Contacto</a></li>
+               <li><a href="#">Compras</a></li>
+             </ul>
+         </div>
+         <div class="footer-bottom">
+          <p>Copyright - StepUp &copy; 2023</p>
+         </div>
+     </div>
+  </footer>
+  <!-- Link para JS --> 
+  <script src="main.js">
+  </script>
+</body>
+</html>
