@@ -16,6 +16,10 @@ body {
   background-position: center;
   background-size: cover;
   }
+
+  .header img {
+    height: 70px;
+  }
   
 .container {
   width: 420px;
@@ -95,6 +99,14 @@ body {
 
 }
 
+#login-form p span {
+  color: cyan;
+  text-shadow: 0 0 5px cyan,
+  0 0 25px cyan,
+  0 0 50px cyan;
+  font-weight: 1000;
+}
+
 /* Estilos del header */
 
 .header {
@@ -118,4 +130,71 @@ body {
   font-size: 20px;
   color: #fff;
   font-weight: 500;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: 50px auto; 
+    padding: 15px; 
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .input-box input {
+    font-size: 12px; 
+    padding: 8px 30px 8px 8px;
+  }
+
+  .input-box i {
+    font-size: 14px;
+  }
+
+  .container .btn {
+    height: 35px; 
+    font-size: 12px;
+  }
+
+  .header {
+    padding: 10px 30px;
+  }
+
+  .navbar p {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .input-box input {
+    font-size: 14px; 
+  }
+
+  .input-box i {
+    font-size: 18px;
+  }
+
+  .container .btn {
+    height: 40px; 
+    font-size: 14px; 
+  }
+
+  .header {
+    padding: 15px 80px;
+  }
+
+  .navbar p {
+    font-size: 18px;
+  }
 }

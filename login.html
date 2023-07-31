@@ -4,35 +4,258 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda de Zapatos - Inicio de sesión</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="index.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Estilos Personalizados */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./recursos/banner\ \(4\).jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+
+  .header img {
+    height: 70px;
+  }
+  
+.container {
+  width: 420px;
+  margin: 100px auto;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  }
+  
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+
+}
+  
+.container .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+.container .btn {
+  width: 100%;
+  height: 45px;
+  background: rgb(150, 100, 0);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container .btn:hover {
+  background: rgb(126, 69, 0);
+  transition: 0.5s;
+}
+
+.container p {
+  margin: 20px;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+#login-form p span {
+  color: cyan;
+  text-shadow: 0 0 5px cyan,
+  0 0 25px cyan,
+  0 0 50px cyan;
+  font-weight: 1000;
+}
+
+/* Estilos del header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 100px 20px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(5px);
+}
+
+.navbar p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: 50px auto; 
+    padding: 15px; 
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .input-box input {
+    font-size: 12px; 
+    padding: 8px 30px 8px 8px;
+  }
+
+  .input-box i {
+    font-size: 14px;
+  }
+
+  .container .btn {
+    height: 35px; 
+    font-size: 12px;
+  }
+
+  .header {
+    padding: 10px 30px;
+  }
+
+  .navbar p {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .input-box input {
+    font-size: 14px; 
+  }
+
+  .input-box i {
+    font-size: 18px;
+  }
+
+  .container .btn {
+    height: 40px; 
+    font-size: 14px; 
+  }
+
+  .header {
+    padding: 15px 80px;
+  }
+
+  .navbar p {
+    font-size: 18px;
+  }
+}
+  </style>
 </head>
 <body>
   <header class="header">
-    <a href="login.html" class="logo"><img src="./recursos/logo (1).png" alt="logo"></a>
+    <a href="login.html" id="logo"><img src="./recursos/logo (1).png" alt="logo"></a>
     <nav class="navbar">
       <p>Bienvenidos a nuestra Tienda de Calzado</p>
     </nav>
-
   </header>
   <div class="container">
     <h1>Inicia sesión</h1>
     <form id="login-form">
-      <p> Por favor, inicia sesión para continuar</p>
+      <p> Por favor, inicia sesión para continuar <br> Usuario: <span>admin</span> / Contraseña: <span>12345</span></p>
       <div class="input-box">
-         <input type="text" id="username" onkeyup="cambiarColor(event)" placeholder="Usuario" required>
+         <input type="text" id="username" placeholder="Usuario" required>
          <i class='bx bxs-user'></i>
       </div>
 
       <div class="input-box">
-         <input type="password" id="password" onkeyup="cambiarColor(event)" placeholder="Contraseña" required>
-         <i class='bx bxs-lock-alt' ></i>
+         <input type="password" id="password" placeholder="Contraseña" required>
+         <i class='bx bxs-lock-alt'></i>
       </div>
 
       <button class="btn" type="submit">Iniciar sesión</button>
     </form>
   </div>
 
-  <script src="login.js"></script>
+  <script>
+    // Obtener los elementos del formulario
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); //Prevenir que el usuario envíe sin información
+
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+  
+    // Aquí están las credenciales ingresadas
+    
+    // Verificación simple
+    if (username === 'admin' && password === '12345') {
+      alert('Te has verificado correctamente, te has verificado correctamente');
+      // Credenciales correctas, dirige al usuario a otra página
+      window.location.href = 'home.html';
+    } else {
+      // Credenciales incorrectas, muestra un mensaje de error
+      alert('Usuario o contraseña incorrectos. Por favor, inténtalo nuevamente.');
+    }
+  });
+  </script>
 </body>
 </html>

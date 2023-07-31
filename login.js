@@ -11,7 +11,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     if (username === 'admin' && password === '12345') {
       alert('Te has verificado correctamente, te has verificado correctamente');
       // Credenciales correctas, dirige al usuario a otra página
-      window.location.href = 'main.html';
+      window.location.href = 'home.html';
     } else {
       // Credenciales incorrectas, muestra un mensaje de error
       alert('Usuario o contraseña incorrectos. Por favor, inténtalo nuevamente.');

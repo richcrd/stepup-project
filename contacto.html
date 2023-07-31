@@ -1,143 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Tienda de Zapatos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-    
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .navbar h1 {
-      font-size: 24px;
-      margin: 0;
-    }
-    
-    .navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .navbar li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-    
-    .navbar li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    .navbar li a.active {
-      font-weight: bold;
-    }
-    
-    .contact-form {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-    }
-    
-    .contact-form h2 {
-      margin-top: 0;
-    }
-    
-    .contact-form label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    
-    .contact-form input,
-    .contact-form select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    
-    .contact-form input[type="submit"] {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
+  <title>Contacto</title>
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <h1>Tienda de Zapatos</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Hombres</a></li>
-          <li><a href="#">Mujeres</a></li>
-          <li><a href="#">Niños</a></li>
-          <li><a href="contacto.html" class="active">Contacto</a></li>
-        </ul>
-      </nav>
+    <!--Encabezado de la Página-->
+    <header class="header">
+        <a href="#"><img id="stepup-logo" src="./recursos/logo (1).png" alt="logo"></a>
+          <!-- Icono del menu -->
+          <!--Navegación de la página-->
+          <ul class="navbar">
+            <!-- links -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><i class="bx bx-shopping-bag" id="cart-icon"></i></li>
+            <!-- Cart -->
+            <div class="cart">
+              <div class="cart-title">Tu Carrito</div>
+              <!-- Contenido -->
+              <div class="cart-content">
+  
+              </div>
+              <!-- Total -->
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+              <!-- Boton Comprar -->
+              <button type="button" class="btn-buy">Comprar Ahora</button>
+              <!-- Cerrar Carrito -->
+              <i class='bx bx-x' id="close-cart"></i>
+            </div>
+            <a href="#" id="close"><i class='bx bx-x'></i></a>
+          </ul>
+          </ul>
+          <!-- Icono de menu de la navegacion de pagina -->
+          <div id="mobile">
+            <a href="#cart.html"><i id="cart" class='bx bx-cart' ></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+          </div>
+    </header>
+  <!-- Información de contacto -->
+  <section class="contact-info">
+    <h2>Información de contacto</h2>
+    <div class="box">
+        <!-- Form -->
+         <div class="contact form">
+            <h3>Enviar un Mensaje</h3>
+            <form>
+                <div class="formBox">
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>Nombre</span>
+                            <input type="text" placeholder="John">
+                        </div>
+                        <div class="inputBox">
+                            <span>Apellido</span>
+                            <input type="text" placeholder="Lopez">
+                        </div>
+                    </div>
+
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>Correo</span>
+                            <input type="text" placeholder="Johnlopez@gmail.com">
+                        </div>
+                        <div class="inputBox">
+                            <span>Telefono</span>
+                            <input type="text" placeholder="+505 88034284">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <span>Mensaje</span>
+                            <textarea placeholder="Escribe tu mensaje aqui..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+         </div>
+         <!-- Info Box -->
+         <div class="contact info">
+            <h3>Información de Contacto</h3>
+            <div class="infoBox">
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <p>Managua, Nicaragua</p>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <a href="mailto:stepup@email.com">stepup@email.com</a>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <a href="tel:+50588034284">+505 8803-4284</a>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-clock"></i></span>
+                    <p>Lunes a Viernes, de 8:00 AM a 5:00 PM</p>
+                </div>
+                <!-- Redes Sociales -->
+                <ul class="sci">
+                    <a href="https://www.facebook.com/profile.php?id=100093943432372" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/urbanshoesni/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href=" https://wa.me/+50588034284" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://twitter.com/StepUp_30?s=20" target="_blank"><i class='bx bxl-twitter'></i></a>
+                </ul>
+            </div>
+         </div>
+         <!-- Map -->
+         <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124838.69974001448!2d-86.34086185463943!3d12.097814714161142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71560dd907880b%3A0x6c5ef4a2144f4c6a!2sManagua!5e0!3m2!1ses!2sni!4v1690768026590!5m2!1ses!2sni"
+              style="border:0;" allowfullscreen="" loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
     </div>
-  </header>
-
-  <section class="contact-form">
-    <h2>Información del Cliente</h2>
-    <form action="procesar.php" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono" required>
-      
-      <label for="direccion">Dirección:</label>
-      <input type="text" id="direccion" name="direccion" required>
-      
-      <label for="forma-pago">Forma de Pago:</label>
-      <select id="forma-pago" name="forma-pago" required>
-        <option value="">Selecciona una opción</option>
-        <option value="tarjeta">Tarjeta de Crédito</option>
-        <option value="paypal">PayPal</option>
-        <option value="efectivo">Efectivo</option>
-      </select>
-      
-      <label for="tarjeta-credito">Tarjeta de Crédito:</label>
-      <input type="text" id="tarjeta-credito" name="tarjeta-credito">
-      
-      <label for="envio">Método de Envío:</label>
-      <input type="text" id="envio" name="envio" required>
-      
-      <input type="submit" value="Realizar Compra">
-    </form>
   </section>
-
-  <footer>
-    <p>Tienda de Zapatos &copy; 2023. Todos los derechos reservados.</p>
-  </footer>
+    <!--Pie de Página-->
+    <footer>
+        <div class="footer-container" id="contacto">
+            <div class="footer-nav">
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+             <p>Diseñado por Richard & Andy - StepUp &copy; 2023</p>
+            </div>
+        </div>
+     </footer>
+ <!-- Link para JS --> 
+ <script src="index.js">
+</script>
 </body>
 </html>
-

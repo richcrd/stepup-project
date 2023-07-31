@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StepUp</title>
+  <link rel="stylesheet" href="productos.css">
+  <!-- Link para estilos externos e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+</style>
+</head>
+<body>
+    <!--Encabezado de la Página-->
+  <header class="header">
+      <a href="#"><img id="stepup-logo" src="./recursos/logo (1).png" alt="logo"></a>
+        <!-- Icono del menu -->
+        <!--Navegación de la página-->
+        <ul class="navbar">
+          <!-- links -->
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><i class="bx bx-shopping-bag" id="cart-icon"></i></li>
+          <!-- Cart -->
+          <div class="cart">
+            <div class="cart-title">Tu Carrito</div>
+            <!-- Contenido -->
+            <div class="cart-content">
+
+            </div>
+            <!-- Total -->
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+            </div>
+            <!-- Boton Comprar -->
+            <button type="button" class="btn-buy">Comprar Ahora</button>
+            <!-- Cerrar Carrito -->
+            <i class='bx bx-x' id="close-cart"></i>
+          </div>
+          <a href="#" id="close"><i class='bx bx-x'></i></a>
+        </ul>
+        <!-- Icono de menu de la navegacion de pagina -->
+        <div id="mobile">
+          <a href="#"><i id="cart" class='bx bx-shopping-bag'></i></a>
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+  </header>
+  <!--Catalogo de productos-->
+  <section class="shop container" id="shop-container">
+       <h2 class="section-title">Encuentra tu Par Perfecto</h2>
+       <nav class="dropdownmenu">
+        <ul>
+            <li><a data-category="all" id="all-category" class="category-btn active" href="#">Todos</a></li>
+            <li>
+                <a id="casuales-category" class="category-btn" href="#">Casuales</a>
+                <ul class="submenu">
+                    <li><a data-category="casuales" data-subcategory="masculino" id="masculino-subcategory" class="subcategory-btn" href="#">Masculino</a></li>
+                    <li><a data-category="casuales" data-subcategory="femenino" id="femenino-subcategory" class="subcategory-btn" href="#">Femenino</a></li>
+                </ul>
+            </li>
+            <li><a class="category-btn" href="#">Cuero</a></li>
+            <li>
+                <a class="category-btn" href="#">Deportivos</a>
+                <ul class="submenu">
+                    <li><a data-category="deportivos" data-subcategory="masculino" id="masculino-deportivos-subcategory" class="subcategory-btn" href="#">Masculino</a></li>
+                    <li><a data-category="deportivos" data-subcategory="femenino" id="femenino-deportivos-subcategory" class="subcategory-btn" href="#">Femenino</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+       <!-- Contenido -->
+      <div class="shop-content">
+        <!-- Box 1 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="masculino">
+          <img src="./recursos/z (4).png" alt="Zapato 1" class="product-img">
+          <h3 class="product-title">Converse Unisex</h3>
+          <span class="price">$65.20</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 2 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="masculino">
+          <img src="./recursos/z (5).png" alt="Zapato 2" class="product-img">
+          <h3 class="product-title">Air Jordan 1</h3>
+          <span class="price">$165</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 3 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="masculino">
+          <img src="./recursos/z (6).png" alt="Zapato 3" class="product-img">
+          <h3 class="product-title">Air Jordan 11</h3>
+          <span class="price">$125</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 4 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="masculino">
+          <img src="./recursos/z (7).png" alt="Zapato 4" class="product-img">
+          <h3 class="product-title">Nike Soft</h3>
+          <span class="price">$30.55</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 5 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="masculino">
+          <img src="./recursos/z (8).png" alt="Zapato 5" class="product-img">
+          <h3 class="product-title">Vans Old School</h3>
+          <span class="price">$45.99</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 6 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="masculino">
+          <img src="./recursos/z (9).png" alt="Zapato 6" class="product-img">
+          <h3 class="product-title">Nike Air force 1</h3>
+          <span class="price">$89</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 7 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="masculino">
+          <img src="./recursos/z (10).png" alt="Zapato 7" class="product-img">
+          <h3 class="product-title">Adidas Yeezy</h3>
+          <span class="price">$55</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 8 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="masculino">
+          <img src="./recursos/z (11).png" alt="Zapato 8" class="product-img">
+          <h3 class="product-title">Adidas Run</h3>
+          <span class="price">$25</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 9 -->
+        <div class="products-container product-item" data-category="cuero" data-subcategory="masculino">
+          <img src="./recursos/z (12).png" alt="Zapato 9" class="product-img">
+          <h3 class="product-title">Leather 2</h3>
+          <span class="price">$35</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 10 -->
+        <div class="products-container product-item" data-category="cuero" data-subcategory="masculino">
+          <img src="./recursos/z (13).png" alt="Zapato 10" class="product-img">
+          <h3 class="product-title">Leather 1</h3>
+          <span class="price">$95</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 11 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="masculino">
+          <img src="./recursos/z (1).png" alt="Zapato 11" class="product-img">
+          <h3 class="product-title">Nike Run 2</h3>
+          <span class="price">$55</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 12 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="masculino">
+          <img src="./recursos/z (2).png" alt="Zapato 12" class="product-img">
+          <h3 class="product-title">Across Dark</h3>
+          <span class="price">$25</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 13 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="masculino">
+          <img src="./recursos/z (3).png" alt="Zapato 13" class="product-img">
+          <h3 class="product-title">Air Jordan 4</h3>
+          <span class="price">$85</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 14 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="masculino">
+          <img src="./recursos/z (14).png" alt="Zapato 14" class="product-img">
+          <h3 class="product-title">Nike Run 9</h3>
+          <span class="price">$60</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 15 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="masculino">
+          <img src="./recursos/z (15).png" alt="Zapato 15" class="product-img">
+          <h3 class="product-title">Adidas</h3>
+          <span class="price">$80</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 16 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="masculino">
+          <img src="./recursos/z (16).png" alt="Zapato 16" class="product-img">
+          <h3 class="product-title">Forum 3</h3>
+          <span class="price">$33.50</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 17 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="femenino">
+          <img src="./recursos/z (17).png" alt="Zapato 17" class="product-img">
+          <h3 class="product-title">361 Six</h3>
+          <span class="price">$20.80</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 18 -->
+        <div class="products-container product-item" data-category="casuales" data-subcategory="femenino">
+          <img src="./recursos/z (18).png" alt="Zapato 18" class="product-img">
+          <h3 class="product-title">Nike air 4</h3>
+          <span class="price">$25.50</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 19 -->
+        <div class="products-container product-item" data-category="cuero" data-subcategory="masculino">
+          <img src="./recursos/z (19).png" alt="Zapato 19" class="product-img">
+          <h3 class="product-title">Leather 6</h3>
+          <span class="price">78.25</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 20 -->
+        <div class="products-container product-item" data-category="deportivos" data-subcategory="femenino">
+          <img src="./recursos/z (20).png" alt="Zapato 02" class="product-img">
+          <h3 class="product-title">Nike Run 8</h3>
+          <span class="price">$90</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- boleta informativa -->
+  <section class="newsletter" id="newsletter">
+    <div class="newstext">
+      <h4>Registrate a nuestro Boletin informativo</h4>
+      <p>Obten actualizaciones en correo sobre nuestras ultimas <span>ofertas especiales</span> de la tienda</p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Tu correo electronico">
+      <button id="registerButton">Registrate</button>
+    </div>
+  </section>
+<!--Pie de Página-->
+  <footer>
+     <div class="footer-container" id="contacto">
+          <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100093943432372" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="https://www.instagram.com/urbanshoesni/" target="_blank"><i class='bx bxl-instagram'></i></a>
+              <a href=" https://wa.me/+50588034284" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+              <a href="https://twitter.com/StepUp_30?s=20" target="_blank"><i class='bx bxl-twitter'></i></a>
+         </div>
+         <div class="footer-nav">
+             <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="productos.html">Productos</a></li>
+               <li><a href="contacto.html">Contacto</a></li>
+               <li><a href="nosotros.html">Nosotros</a></li>
+             </ul>
+         </div>
+         <div class="footer-bottom">
+          <p>Diseñado por Richard & Andy - StepUp &copy; 2023</p>
+         </div>
+     </div>
+  </footer>
+  <!-- Link para JS --> 
+  <script src="index.js">
+</script>
+</body>
+</html>
